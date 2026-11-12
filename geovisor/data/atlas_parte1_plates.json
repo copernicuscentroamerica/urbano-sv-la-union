@@ -1,0 +1,197 @@
+[
+  {
+    "key": "proj-p1",
+    "number": "LÁMINA P1",
+    "shortTitle": "P1 · Serie 2019–2025",
+    "title": "Serie Consolidada de Crecimiento de Asentamientos Humanos (2019–2025 · 24,417 Polígonos)",
+    "sensor": "Serie multitemporal MIVIVIENDA / Equipo técnico sv-la-union + Límites distritales",
+    "formula": "Consolidado_2019_2025 = union_{t=2019..2025} Poligonos_AH(t) en EPSG:32616 / EPSG:4326",
+    "reading": "Revela la densificación continua del eje urbano La Unión–Conchagua y la aparición de nuevos núcleos dispersos a lo largo de la carretera Litoral y el borde del Golfo de Fonseca.",
+    "imageRel": "assets/img/atlas_proyecto/lamina_p1.png",
+    "coords": [
+      [
+        -88.004216,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.13637
+      ],
+      [
+        -88.004216,
+        13.13637
+      ]
+    ],
+    "swatches": [
+      {
+        "color": "#38BDF8",
+        "label": "2019–2020 (158.3 y 117.2 ha)",
+        "desc": "Línea base pre-pandemia y primer bienio"
+      },
+      {
+        "color": "#14B8A6",
+        "label": "2021 · Máximo (258.8 ha)",
+        "desc": "Mayor pulso de expansión en ambos distritos"
+      },
+      {
+        "color": "#84CC16",
+        "label": "2022–2023 (192.1 y 230.7 ha)",
+        "desc": "Consolidación periurbana intermedia"
+      },
+      {
+        "color": "#F97316",
+        "label": "2024 (204.1 ha · 4,256 pol.)",
+        "desc": "Mayor fragmentación de lotes"
+      },
+      {
+        "color": "#EF4444",
+        "label": "2025 (207.8 ha · 2,831 pol.)",
+        "desc": "Corte más reciente verificado"
+      }
+    ]
+  },
+  {
+    "key": "proj-p2",
+    "number": "LÁMINA P2",
+    "shortTitle": "P2 · Periodo 2019–2021",
+    "title": "Primera Etapa Multitemporal (2019–2021): Núcleos Base y Pulso de Expansión 2021",
+    "sensor": "Capas anuales Crecimiento_AH_LU_CH_2019, 2020 y 2021",
+    "formula": "Etapa_I = { 2019: 158.33 ha, 2020: 117.15 ha, 2021: 258.77 ha }",
+    "reading": "Muestra la estructura inicial concentrada alrededor de la ciudad portuaria de La Unión, la cabecera de Conchagua y los asentamientos pesqueros litorales.",
+    "imageRel": "assets/img/atlas_proyecto/lamina_p2.png",
+    "coords": [
+      [
+        -88.004216,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.13637
+      ],
+      [
+        -88.004216,
+        13.13637
+      ]
+    ],
+    "swatches": [
+      {
+        "color": "#38BDF8",
+        "label": "Corte 2019 (3,124 pol.)",
+        "desc": "158.33 ha totales"
+      },
+      {
+        "color": "#0284C7",
+        "label": "Corte 2020 (2,605 pol.)",
+        "desc": "117.15 ha totales"
+      },
+      {
+        "color": "#14B8A6",
+        "label": "Corte 2021 (3,950 pol.)",
+        "desc": "258.77 ha totales (pico de la serie)"
+      }
+    ]
+  },
+  {
+    "key": "proj-p3",
+    "number": "LÁMINA P3",
+    "shortTitle": "P3 · Reciente 2022–2025",
+    "title": "Segunda Etapa Multitemporal (2022–2025): Consolidación Reciente y Nuevos Frentes",
+    "sensor": "Capas anuales Crecimiento_AH_LU_CH_2022, 2023, 2024 y 2025",
+    "formula": "Etapa_II = { 2022: 192.08 ha, 2023: 230.67 ha, 2024: 204.12 ha, 2025: 207.82 ha }",
+    "reading": "Permite a MIVIVIENDA y a la Alcaldía de La Unión Sur focalizar diagnósticos de servicios básicos en los frentes activos de los últimos cuatro años.",
+    "imageRel": "assets/img/atlas_proyecto/lamina_p3.png",
+    "coords": [
+      [
+        -88.004216,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.13637
+      ],
+      [
+        -88.004216,
+        13.13637
+      ]
+    ],
+    "swatches": [
+      {
+        "color": "#84CC16",
+        "label": "Corte 2022 (3,755 pol.)",
+        "desc": "192.08 ha"
+      },
+      {
+        "color": "#FACC15",
+        "label": "Corte 2023 (3,896 pol.)",
+        "desc": "230.67 ha"
+      },
+      {
+        "color": "#F97316",
+        "label": "Corte 2024 (4,256 pol.)",
+        "desc": "204.12 ha"
+      },
+      {
+        "color": "#EF4444",
+        "label": "Corte 2025 (2,831 pol.)",
+        "desc": "207.82 ha"
+      }
+    ]
+  },
+  {
+    "key": "proj-p4",
+    "number": "LÁMINA P4",
+    "shortTitle": "P4 · Balance Distrital",
+    "title": "Distribución Territorial por Distrito: La Unión, Conchagua y Borde Costero del Golfo",
+    "sensor": "Intersección espacial con conchagua_la_union_osm.geojson",
+    "formula": "Balance_Distrital_2019_2025: La_Union = 645.8 ha | Conchagua = 553.4 ha | Litoral = 169.7 ha",
+    "reading": "Evidencia el peso ligeramente superior del corredor portuario de La Unión (52% en 2025) junto con una presión relevante sobre las faldas del volcán de Conchagua y esteros costeros.",
+    "imageRel": "assets/img/atlas_proyecto/lamina_p4.png",
+    "coords": [
+      [
+        -88.004216,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.405551
+      ],
+      [
+        -87.72129,
+        13.13637
+      ],
+      [
+        -88.004216,
+        13.13637
+      ]
+    ],
+    "swatches": [
+      {
+        "color": "#10B981",
+        "label": "Distrito de La Unión",
+        "desc": "645.8 ha acumuladas en la serie 2019–2025"
+      },
+      {
+        "color": "#3B82F6",
+        "label": "Distrito de Conchagua",
+        "desc": "553.4 ha acumuladas en ladera y corredor sur"
+      },
+      {
+        "color": "#F59E0B",
+        "label": "Franja Litoral / Insular Adyacente",
+        "desc": "169.7 ha en bordes costeros del Golfo de Fonseca"
+      }
+    ]
+  }
+]

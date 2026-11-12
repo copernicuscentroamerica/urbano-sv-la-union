@@ -1,19 +1,4 @@
-## Evidencias documentales y planificación inicial
+## Resultados verificados del periodo 2019–2025
 
-- Se recibieron dos versiones de la ficha. No se adjuntaron un backlog, código ejecutable ni URL de una aplicación para este proyecto.
-
-No se recibió backlog para esta iniciativa. Las tareas que Antigravity derive de esta ficha deben marcarse como propuestas y presentarse para revisión, sin atribuir responsables ni fechas acordadas.
-
-## Especificación de módulos de aplicación
-
-Estos componentes describen el diseño funcional previsto para el visor y el tablero de la iniciativa. Los módulos e indicadores se habilitan de forma progresiva a medida que el equipo incorpora y valida cada conjunto de datos en el repositorio.
-
-- Mapa inicial con ámbito Conchagua–La Unión y selector de fecha del inventario.
-- Panel de caracterización de asentamientos y su relación con vías, usos del suelo y amenazas autorizadas.
-- Sección de cambios demográficos con fuente censal y advertencia de comparabilidad.
-- Catálogo de capas y documento del método; filtros de amenazas solo con datos disponibles.
-- Vista de prioridades de análisis propuesta, separada de las autorizaciones de uso de suelo.
-
-### Estados vacíos y navegación
-
-Para garantizar la transparencia técnica, las capas e indicadores en preparación se identifican explícitamente como pendientes hasta contar con datos verificados, evitando sustituir mediciones faltantes con valores simulados. Todos los enlaces de colaboración de esta página conectan directamente con el repositorio oficial de la iniciativa.
+- **24,417 polígonos registrados entre 2019 y 2025**, con la siguiente evolución anual: **2019 (158.33 ha)**, **2020 (117.15 ha)**, **2021 (258.77 ha, máximo de la serie)**, **2022 (192.08 ha)**, **2023 (230.67 ha)**, **2024 (204.12 ha)** y **2025 (207.82 ha)**.
+- **Distribución equilibrada con presión creciente en La Unión y eje Conchagua:** En 2025 el Distrito de La Unión concentró **108.14 ha** frente a **79.23 ha** en Conchagua (más frentes sobre el borde insular/litoral del Golfo de Fonseca).

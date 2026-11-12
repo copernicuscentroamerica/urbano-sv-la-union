@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "sv-la-union",
-  "title": "La Unión y Conchagua: asentamientos costeros",
+  "title": "Conchagua y La Unión (La Unión Sur): dinámica de asentamientos 2019–2025",
   "country": {
     "code": "SV",
     "name": "El Salvador"
@@ -37,201 +37,203 @@
   "layers": [
     {
       "id": "sv-union-distritos-osm",
-      "title": "Límite distrital referencial: Conchagua y La Unión (OSM ODbL)",
-      "group": "Ámbito de estudio",
+      "title": "Límites distritales de estudio: Conchagua y La Unión (36,577.9 ha)",
+      "group": "1 · Ámbito distrital costero (La Unión Sur)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/conchagua_la_union_osm.geojson",
-      "expected_file_hint": "geovisor/capas/conchagua_la_union_osm.geojson",
-      "resolution": "Vectorial distrital referencial (~36.578 ha, EPSG:4326)",
+      "resolution": "Distritos de Conchagua (17,693.5 ha) y La Unión (18,884.4 ha)",
       "style": {
-        "fill_color": "#007F8B",
-        "fill_opacity": 0.18,
-        "stroke_color": "#14283F",
-        "stroke_width": 2.2
+        "fill_color": "#0C1659",
+        "fill_opacity": 0.05,
+        "stroke_color": "#0C1659",
+        "stroke_width": 2.5,
+        "visible_by_default": true
       },
-      "caveat": "Fuente externa abierta: OpenStreetMap contributors (ODbL). Acotado a Conchagua y La Unión (La Unión Sur) conforme S19; sujeto a homologación con CNR/MIVI."
+      "caveat": "Delimitación distrital referencial en torno al Puerto de La Unión, Golfo de Fonseca y eje Conchagua–El Tamarindo."
     },
     {
-      "id": "sv-union-limites-distritales",
-      "title": "Límite distrital acordado: Conchagua y La Unión (La Unión Sur)",
-      "group": "Ámbito de estudio",
+      "id": "sv-union-crecimiento-consolidado",
+      "title": "Serie consolidada de crecimiento de asentamientos humanos 2019–2025 (24,417 polígonos)",
+      "group": "2 · Síntesis multitemporal integrada (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_preparacion",
-      "source_path": null,
-      "expected_file_hint": "geovisor/capas/conchagua_la_union_limites.geojson",
-      "resolution": "Vectorial administrativo oficial",
+      "status": "publicado",
+      "source_path": "geovisor/capas/crecimiento_ah_consolidado_2019_2025.geojson",
+      "resolution": "24,417 polígonos con atribución de año y distrito (EPSG:4326)",
       "style": {
-        "fill_color": "#14283F",
-        "fill_opacity": 0.08,
-        "stroke_color": "#14283F",
-        "stroke_width": 2
+        "fill_color": "#DC2626",
+        "fill_color_attribute": "anio",
+        "fill_color_categories": [
+          {
+            "value": "2019",
+            "label": "Año 2019 (158.33 ha · 3,124 polígonos)",
+            "color": "#1E3A8A"
+          },
+          {
+            "value": "2020",
+            "label": "Año 2020 (117.15 ha · 2,605 polígonos)",
+            "color": "#0284C7"
+          },
+          {
+            "value": "2021",
+            "label": "Año 2021 (258.77 ha · 3,950 polígonos)",
+            "color": "#0D9488"
+          },
+          {
+            "value": "2022",
+            "label": "Año 2022 (192.08 ha · 3,755 polígonos)",
+            "color": "#65A30D"
+          },
+          {
+            "value": "2023",
+            "label": "Año 2023 (230.67 ha · 3,896 polígonos)",
+            "color": "#EAB308"
+          },
+          {
+            "value": "2024",
+            "label": "Año 2024 (204.12 ha · 4,256 polígonos)",
+            "color": "#F97316"
+          },
+          {
+            "value": "2025",
+            "label": "Año 2025 (207.82 ha · 2,831 polígonos)",
+            "color": "#DC2626"
+          }
+        ],
+        "fill_opacity": 0.75,
+        "stroke_color": "#1E293B",
+        "stroke_width": 0.4,
+        "visible_by_default": true
       },
-      "caveat": "Acotado a Conchagua y La Unión conforme S19."
-    },
-    {
-      "id": "sv-union-inventario-ah",
-      "title": "Inventario y delimitación actualizada de asentamientos humanos",
-      "group": "Asentamientos y cambio urbano",
-      "format": "geojson",
-      "geometry_type": "polygon",
-      "status": "en_preparacion",
-      "source_path": null,
-      "expected_file_hint": "geovisor/capas/asentamientos_conchagua_la_union.geojson",
-      "resolution": "10 m (Sentinel-2 / Open Buildings) + revisión local",
-      "style": {
-        "fill_color": "#007F8B",
-        "fill_opacity": 0.5,
-        "stroke_color": "#004c54",
-        "stroke_width": 1.5
-      },
-      "caveat": "Sujeto a definición de nivel de acceso público/institucional antes de publicar atributos detallados."
-    },
-    {
-      "id": "sv-union-amenazas-aptitud",
-      "title": "Cruce con amenazas y condiciones de ocupación del suelo",
-      "group": "Exposición y planificación",
-      "format": "geojson",
-      "geometry_type": "polygon",
-      "status": "en_preparacion",
-      "source_path": null,
-      "expected_file_hint": "geovisor/capas/caracterizacion_amenazas_la_union.geojson",
-      "resolution": "Escala distrital / asentamiento",
-      "style": {
-        "fill_color": "#e7298a",
-        "fill_opacity": 0.4,
-        "stroke_color": "#980043",
-        "stroke_width": 1.2
-      },
-      "caveat": "Insumo analítico para MIVI/DOT/FONAVIPO; no constituye zonificación normativa aprobada."
+      "caveat": "Capa integrada que permite identificar la progresión interanual de asentamientos sobre el corredor portuario de La Unión y las laderas y franja litoral de Conchagua."
     },
     {
       "id": "sv-union-crecimiento-2019",
-      "title": "Crecimiento urbano 2019",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2019 (158.33 ha · 3,124 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2019.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2019.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2019 en EPSG:4326",
       "style": {
-        "fill_color": "#2563EB",
-        "fill_opacity": 0.35,
-        "stroke_color": "#1E40AF",
-        "stroke_width": 1.5
+        "fill_color": "#1E3A8A",
+        "fill_opacity": 0.7,
+        "stroke_color": "#1E3A8A",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2019 con cálculo de área individual en hectáreas y distrito."
     },
     {
       "id": "sv-union-crecimiento-2020",
-      "title": "Crecimiento urbano 2020",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2020 (117.15 ha · 2,605 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2020.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2020.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2020 en EPSG:4326",
       "style": {
-        "fill_color": "#14B8A6",
-        "fill_opacity": 0.35,
-        "stroke_color": "#0F766E",
-        "stroke_width": 1.5
+        "fill_color": "#0284C7",
+        "fill_opacity": 0.7,
+        "stroke_color": "#0284C7",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2020 con cálculo de área individual en hectáreas y distrito."
     },
     {
       "id": "sv-union-crecimiento-2021",
-      "title": "Crecimiento urbano 2021",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2021 (258.77 ha · 3,950 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2021.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2021.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2021 en EPSG:4326",
       "style": {
-        "fill_color": "#84CC16",
-        "fill_opacity": 0.35,
-        "stroke_color": "#4D7C0F",
-        "stroke_width": 1.5
+        "fill_color": "#0D9488",
+        "fill_opacity": 0.7,
+        "stroke_color": "#0D9488",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2021 con cálculo de área individual en hectáreas y distrito."
     },
     {
       "id": "sv-union-crecimiento-2022",
-      "title": "Crecimiento urbano 2022",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2022 (192.08 ha · 3,755 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2022.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2022.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2022 en EPSG:4326",
       "style": {
-        "fill_color": "#EAB308",
-        "fill_opacity": 0.35,
-        "stroke_color": "#A16207",
-        "stroke_width": 1.5
+        "fill_color": "#65A30D",
+        "fill_opacity": 0.7,
+        "stroke_color": "#65A30D",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2022 con cálculo de área individual en hectáreas y distrito."
     },
     {
       "id": "sv-union-crecimiento-2023",
-      "title": "Crecimiento urbano 2023",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2023 (230.67 ha · 3,896 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2023.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2023.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2023 en EPSG:4326",
       "style": {
-        "fill_color": "#F97316",
-        "fill_opacity": 0.35,
-        "stroke_color": "#C2410C",
-        "stroke_width": 1.5
+        "fill_color": "#EAB308",
+        "fill_opacity": 0.7,
+        "stroke_color": "#EAB308",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2023 con cálculo de área individual en hectáreas y distrito."
     },
     {
       "id": "sv-union-crecimiento-2024",
-      "title": "Crecimiento urbano 2024",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2024 (204.12 ha · 4,256 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2024.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2024.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2024 en EPSG:4326",
       "style": {
-        "fill_color": "#E11D48",
-        "fill_opacity": 0.35,
-        "stroke_color": "#9F1239",
-        "stroke_width": 1.5
+        "fill_color": "#F97316",
+        "fill_opacity": 0.7,
+        "stroke_color": "#F97316",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2024 con cálculo de área individual en hectáreas y distrito."
     },
     {
       "id": "sv-union-crecimiento-2025",
-      "title": "Crecimiento urbano 2025",
-      "group": "Asentamientos y cambio urbano",
+      "title": "Corte anual 2025 (207.82 ha · 2,831 polígonos)",
+      "group": "3 · Capas anuales individuales (2019–2025)",
       "format": "geojson",
       "geometry_type": "polygon",
-      "status": "en_revision",
+      "status": "publicado",
       "source_path": "geovisor/capas/Crecimiento_AH_LU_CH_2025.geojson",
-      "expected_file_hint": "geovisor/capas/Crecimiento_AH_LU_CH_2025.geojson",
-      "resolution": "Polígonos vectoriales; resolución del insumo no documentada",
+      "resolution": "Corte anual 2025 en EPSG:4326",
       "style": {
-        "fill_color": "#A855F7",
-        "fill_opacity": 0.35,
-        "stroke_color": "#7E22CE",
-        "stroke_width": 1.5
+        "fill_color": "#DC2626",
+        "fill_opacity": 0.7,
+        "stroke_color": "#DC2626",
+        "stroke_width": 1.0,
+        "visible_by_default": false
       },
-      "caveat": "Insumo de crecimiento urbano del taller Copernicus; pendiente de validación metodológica e institucional. No equivale por sí solo a una delimitación oficial de asentamientos humanos."
+      "caveat": "Polígonos registrados en el corte 2025 con cálculo de área individual en hectáreas y distrito."
     }
   ]
 }
